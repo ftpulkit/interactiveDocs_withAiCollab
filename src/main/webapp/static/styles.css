@@ -1,0 +1,125 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6; /* Soft light background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #6200ea; /* Purple header for contrast */
+    padding: 20px 10%;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Toolbar styles (buttons, dropdowns) */
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8e24aa; /* Lighter purple for toolbar */
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+    font-size: 1.2rem;
+}
+
+.toolbar button {
+    background-color: #fff;
+    color: #6200ea;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toolbar button:hover {
+    background-color: #e1bee7; /* Light purple on hover */
+    transform: scale(1.05);
+}
+
+/* Editor container styles */
+#editor-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer styles */
+footer {
+    background-color: #6200ea; /* Matching footer color */
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+        padding: 15px 5%;
+    }
+
+    .toolbar {
+        font-size: 1rem;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .toolbar button {
+        margin: 5px 0;
+    }
+
+    #editor-container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 15px 5%;
+    }
+}
+
+/* Styling for the editor content */
+#editor-container div {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow-y: auto;
+}
+
+/* Button animations */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.5);
+}

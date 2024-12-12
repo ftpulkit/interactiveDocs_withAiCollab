@@ -1,0 +1,82 @@
+/* General page styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6; /* Soft light background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #9c4dcc;
+    padding: 8px 1%; /* Slightly smaller padding for a shorter header */
+    text-align: center;
+    color: white;
+    font-size: 1.8rem; /* Adjusted for readability */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header h1 span {
+    font-size: 1.4rem; /* Slightly smaller font size for emphasis */
+    color: #ffeb3b; /* Bright yellow for contrast */
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Soft shadow for better visibility */
+}
+
+/* Toolbar styles */
+#toolbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #8e24aa; /* Lighter purple for toolbar */
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#toolbar button {
+    background-color: #fff;
+    color: #6200ea;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#toolbar button:hover {
+    background-color: #e1bee7; /* Light purple on hover */
+    transform: scale(1.05);
+}
+
+/* Editor container styles */
+#editor-container {
+    width: 90%; /* Reduced width for better centering */
+    max-width: 1200px; /* Better max-width for readability */
+    margin: 30px auto;
+    padding: 25px; /* Adjusted padding for comfort */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    min-height: 500px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #9c4dcc;
+    color: white;
+    padding: 15px 10%;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
